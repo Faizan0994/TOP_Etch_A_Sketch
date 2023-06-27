@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    background-color: white;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    margin: 0;
+    font-size: 64px;
+}
+
+.main {
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    background-color: black;
+    align-items: center;
+    gap: 10%;
+}
+
+.footer {
+    height: 10vh;
+}
+
+.canvas {
+    background-color: white;
+    height: 75ch;
+    width: 75ch;
+    border: 3ch solid;
+    border-color: cornflowerblue;
+    border-radius: 5%;
+}
+
+.panel {
+    background-color: white;
+    height: 75ch;
+    width: 35ch;
+    border-color: cornflowerblue;
+    border-radius: 2%;
+}
