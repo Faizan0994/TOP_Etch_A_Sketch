@@ -1,7 +1,12 @@
 var order = 16;
 var canvas = document.querySelector('.canvas');
 const generateGrid = function(order) {
-    for(var i=1;i<=order;i++){
+
+    while(canvas.firstChild){ //This removes previously existing grid
+        canvas.removeChild(canvas.lastChild);
+    }
+
+    for(var i=1;i<=order;i++){ //This actually generates the grid
         var row = document.createElement('div');
         row.classList.add('row');
         for(var j=1;j<=order;j++){
@@ -12,3 +17,5 @@ const generateGrid = function(order) {
         canvas.appendChild(row);
     }
 }
+
+generateGrid(order); //Generates grid with default value when page is launched
