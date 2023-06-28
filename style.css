@@ -34,12 +34,15 @@ body {
 }
 
 .canvas {
+    display: flex;
     background-color: white;
     height: 75ch;
     width: 75ch;
     border: 3ch solid;
     border-color: cornflowerblue;
     border-radius: 5%;
+    justify-content: stretch;
+    padding: 2px;
 }
 
 .panel {
@@ -48,4 +51,18 @@ body {
     width: 35ch;
     border-color: cornflowerblue;
     border-radius: 2%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.square {
+    background-color: white;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 25%;
+    flex: 1;
 }
