@@ -45,3 +45,9 @@ divs.forEach(div => div.addEventListener('mouseover', (div)=>{
     }
     div.target.style.backgroundColor = colorType;
 }));
+
+//for resetting the canvas
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', ()=>{
+    divs.forEach(div => div.style.backgroundColor = "white");
+});
