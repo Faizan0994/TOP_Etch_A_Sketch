@@ -19,3 +19,29 @@ const generateGrid = function(order) {
 }
 
 generateGrid(order); //Generates grid with default value when page is launched
+
+function toggle(btnElem) {//make sure only one of color buttons is active at a time
+    if (!btnElem.classList.contains('active')) {
+      document.querySelectorAll('.active').forEach(button => button.classList.remove('active'));
+      btnElem.classList.add('active');
+      return;
+    }  
+}
+
+var colorType = "black"; //to make color black by default
+document.querySelector('#black').classList.add('active');
+
+//for selecting color type by active button
+var color_buttons = document.querySelectorAll('.color_button');
+color_buttons.forEach(button => button.addEventListener('click', (e) => {
+    colorType = e.target.id;
+}));
+
+//for filling the boxes
+const divs = document.querySelectorAll('.square');
+divs.forEach(div => div.addEventListener('mouseover', (div)=>{ 
+    if(colorType !== "black"){
+        colorType = "#" + Math.floor(Math.random()*16777215).toString(16);
+    }
+    div.target.style.backgroundColor = colorType;
+}));
