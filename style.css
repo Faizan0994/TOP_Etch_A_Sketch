@@ -46,6 +46,9 @@ body {
 }
 
 .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     background-color: white;
     height: 75ch;
     width: 35ch;
@@ -65,4 +68,27 @@ body {
     border-color: black;
     border-radius: 25%;
     flex: 1;
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+button {
+    background-color: cornflowerblue;
+    border: 0.5ch solid;
+    border-color: cornflowerblue;
+    border-radius: 9px;
+}
+
+.active {
+    border-color: black;
 }
