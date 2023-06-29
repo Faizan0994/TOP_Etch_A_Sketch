@@ -74,6 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8px 0px;
 }
 
 .color_buttons {
@@ -91,4 +92,15 @@ button {
 
 .active {
     border-color: black;
+}
+
+.reset_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.reset_section button {
+    padding: 5% 10%;
 }
