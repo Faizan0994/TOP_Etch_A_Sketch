@@ -20,6 +20,11 @@ const generateGrid = function(order) {
 
 generateGrid(order); //Generates grid with default value when page is launched
 
+
+document.querySelector('.regenerate').addEventListener('click', ()=>{
+    generateGrid(64);
+});
+
 function toggle(btnElem) {//make sure only one of color buttons is active at a time
     if (!btnElem.classList.contains('active')) {
       document.querySelectorAll('.active').forEach(button => button.classList.remove('active'));
@@ -39,12 +44,13 @@ color_buttons.forEach(button => button.addEventListener('click', (e) => {
 
 //for filling the boxes
 const divs = document.querySelectorAll('.square');
-divs.forEach(div => div.addEventListener('mouseover', (div)=>{ 
-    if(colorType !== "black"){
-        colorType = "#" + Math.floor(Math.random()*16777215).toString(16);
+document.body.addEventListener('mouseover', (e)=>{
+    if(e.target.classList.contains('square')){
+        if(colorType !== "black"){
+            colorType = "#" + Math.floor(Math.random()*16777215).toString(16);
     }
-    div.target.style.backgroundColor = colorType;
-}));
+    e.target.style.backgroundColor = colorType;
+}});
 
 //for resetting the canvas
 const reset = document.querySelector('.reset');
