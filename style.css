@@ -104,3 +104,18 @@ button {
 .reset_section button {
     padding: 5% 10%;
 }
+
+.regenerate_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slidecontainer {
+    display: flex;
+    align-items: center;
+}
+
+.regenerate {
+    padding: 5% 10%;
+}
