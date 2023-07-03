@@ -22,7 +22,7 @@ generateGrid(order); //Generates grid with default value when page is launched
 
 
 document.querySelector('.regenerate').addEventListener('click', ()=>{
-    generateGrid(64);
+    generateGrid(slider.value);
 });
 
 function toggle(btnElem) {//make sure only one of color buttons is active at a time
@@ -57,3 +57,12 @@ const reset = document.querySelector('.reset');
 reset.addEventListener('click', ()=>{
     divs.forEach(div => div.style.backgroundColor = "white");
 });
+
+//for slider
+var sliderOutput = document.querySelector('.slider_value');
+var slider = document.querySelector('.slider');
+slider.value = 16;
+sliderOutput.innerHTML = slider.value;
+slider.oninput = function () {
+    sliderOutput.innerHTML = this.value;
+}
