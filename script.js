@@ -43,7 +43,7 @@ color_buttons.forEach(button => button.addEventListener('click', (e) => {
 }));
 
 //for filling the boxes
-const divs = document.querySelectorAll('.square');
+
 document.body.addEventListener('mouseover', (e)=>{
     if(e.target.classList.contains('square')){
         if(colorType !== "black"){
@@ -55,6 +55,7 @@ document.body.addEventListener('mouseover', (e)=>{
 //for resetting the canvas
 const reset = document.querySelector('.reset');
 reset.addEventListener('click', ()=>{
+    const divs = document.querySelectorAll('.square');
     divs.forEach(div => div.style.backgroundColor = "white");
 });
 
