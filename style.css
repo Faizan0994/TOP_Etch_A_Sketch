@@ -24,13 +24,14 @@ body {
     display: flex;
     justify-content: center;
     height: 80vh;
-    background-color: black;
+    background-color: antiquewhite;
     align-items: center;
     gap: 10%;
 }
 
 .footer {
     height: 10vh;
+    background-color: antiquewhite;
 }
 
 .canvas {
@@ -52,6 +53,7 @@ body {
     background-color: white;
     height: 65%;
     width: 35ch;
+    border: 1px solid;
     border-color: cornflowerblue;
     border-radius: 2%;
 }
