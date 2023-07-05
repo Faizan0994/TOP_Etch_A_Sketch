@@ -48,9 +48,9 @@ body {
 .panel {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-around;
     background-color: white;
-    height: 75ch;
+    height: 65%;
     width: 35ch;
     border-color: cornflowerblue;
     border-radius: 2%;
@@ -74,7 +74,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px 0px;
+    margin: 15% 0%;
+}
+
+.color p {
+    padding: 0%;
+    margin: 0%;
+    font-size: 48px;
 }
 
 .color_buttons {
@@ -88,6 +94,10 @@ button {
     border: 0.5ch solid;
     border-color: cornflowerblue;
     border-radius: 9px;
+}
+
+.color_button {
+    padding: 2% 4%;
 }
 
 .active {
@@ -118,4 +128,9 @@ button {
 
 .regenerate {
     padding: 5% 10%;
+}
+
+.regenerate_section p {
+    font-size: 48px;
+    margin: 2% 0%;
 }
