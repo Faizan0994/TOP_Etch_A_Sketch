@@ -30,8 +30,26 @@ body {
 }
 
 .footer {
+    display: flex;
+    padding: 0% 10%;
+    justify-content: flex-end;
+    gap: 8px;
     height: 10vh;
     background-color: antiquewhite;
+}
+
+#p1, #p2 {
+    color: rgb(163, 163, 3);
+    font-style: italic;
+    font-family: Georgia, helvetica, Times, serif;
+    margin: 0%;
+    font-size: 36px;
+}
+
+#p2 {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: cornflowerblue;
 }
 
 .canvas {
